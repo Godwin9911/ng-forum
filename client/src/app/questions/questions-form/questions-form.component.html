@@ -1,0 +1,25 @@
+<h2>Post Question</h2>
+<p>Ask the Community</p>
+<form #form="ngForm" (ngSubmit)="submit(form)">
+  <div class="form-group row">
+    <label class="col-md-2 col-form-label d-none"
+           for="questionId">Question</label>
+    <div class="col-md-8">
+      <textarea class="form-control"
+                id="questionId"
+                placeholder="Enter your Question"
+                rows=5
+                maxlength="200"
+                required
+                [(ngModel)]="question"
+                #questionField="ngModel"
+                [ngClass]="{'is-invalid' : form.submitted && questionField.invalid}"
+                name="question"></textarea>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="button" class="btn btn-dark m-2" (click)="clear()">Clear</button>
+</form>
+
+<small class="text-secondary">click submit to post your question in the community,<br> Please respect the community guidelnes</small>
+

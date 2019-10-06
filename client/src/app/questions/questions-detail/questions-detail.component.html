@@ -1,0 +1,23 @@
+<h2>Question</h2>
+<div class="jumbotron">
+  <p style="font-size: 2rem">{{ question.question }}</p>
+</div>
+<div class="col-md-6">
+  <h3 class="">{{ question.answers?.length || 'No' }} Answers</h3>
+  <div class="card bg-secondary border mb-3" *ngFor="let answers of question.answers">
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text">{{ answers.answer }}</p>
+    </div>
+    <div class="card-footer text-right">
+      <i class="fa fa-user-circle"></i>
+      {{ answers.userId }}
+       <a class="text-primary ml-2"*ngIf="isLoggedIn && firstname === answers.userId" (click)="deleteAnswer(question._id, answers.answerId)"><i class="fa fa-trash"></i> Delete</a>
+    </div>
+  </div>
+</div>
+<hr>
+<div>
+  <app-answer-form></app-answer-form>
+</div>
+

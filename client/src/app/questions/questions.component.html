@@ -1,0 +1,13 @@
+<div>
+  <h2>Questions from the Community</h2>
+  <div class="col-md-6">
+    <div class="card bg-secondary border mb-3" *ngFor="let question of questions">
+      <div class="card-body">
+        <h4 class="card-title"></h4>
+        <p class="card-text">{{ question.question }}</p>
+      </div>
+      <div class="card-footer text-right">
+        <button class="btn btn-outline-dark" [routerLink]="['/questions', question._id]"><i class="fa fa-comments"></i> {{ question.answers?.length || '0'}} Answers</button>
+      </div>
+  </div>
+</div>

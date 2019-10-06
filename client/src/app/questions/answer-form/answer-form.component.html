@@ -1,0 +1,28 @@
+<div *ngIf="isLoggedIn">
+    <h2>Post Answer</h2>
+    <p class="text-secondary">Answer questions from the Community</p>
+    <form #answerform="ngForm" (ngSubmit)="submit(answerform)">
+      <div class="form-group row">
+        <label class="col-md-2 col-form-label d-none"
+               for="answerId">Answer</label>
+        <div class="col-md-8">
+          <textarea class="form-control"
+                    id="answerId"
+                    placeholder="Enter your Answer Here"
+                    rows=5
+                    maxlength="200"
+                    required
+                    [(ngModel)]="answer"
+                    #answerField="ngModel"
+                    [ngClass]="{'is-invalid' : answerform.submitted && answerField.invalid}"
+                    name="answer"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-dark m-2" (click)="clear()">Clear</button>
+    </form>
+
+    <small class="text-secondary">Please respect the community guidelnes</small>
+</div>
+
+
