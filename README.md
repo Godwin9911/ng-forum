@@ -19,12 +19,21 @@ A NodeJS Backend using express to create the API endpoints, Passport for user au
 * Created an API for.
   * Registering New Users
   * Authenticating users
-  * Post Questions and Answers.
+  * POST and GET Questions and Answers.
 * Hashed Users Password with Bcrypt.
-* Update Nested data in a mongodb collection.
+* Update Nested data in a mongodb collection. (Adding answers to an array of answers)
 
 # Screenshots
-<img scr="./screenshots/loginpage.png" alt="loginpage">
+<img src="./screenshots/welcomepage.png" alt="welcomepage">
+
+<img src="./screenshots/loginpage.png" alt="loginpage" >
+
+<img src="./screenshots/registerpage.png" alt="registerpage">
+
+<img src="./screenshots/questionspage.png" alt="questionapage">
+
+<img src="./screenshots/questionandanswerpage.png" alt="questionandanswerpage">
+
 
 # Side Fact
 
