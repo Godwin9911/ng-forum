@@ -24,14 +24,19 @@ A NodeJS Backend using express to create the API endpoints, Passport for user au
 * Update Nested data in a mongodb collection. (Adding answers to an array of answers)
 
 # Screenshots
-<img src="./screenshots/welcomepage.png" alt="welcomepage" width="45%">
+## Welcome Page
+<img src="./screenshots/welcomepage.png" alt="welcomepage">
 
-<img src="./screenshots/loginpage.png" alt="loginpage" width="45%">
+## Login Page
+<img src="./screenshots/loginpage.png" alt="loginpage">
 
-<img src="./screenshots/registerpage.png" alt="registerpage" width="45%">
+## Register Page
+<img src="./screenshots/registerpage.png" alt="registerpage">
 
-<img src="./screenshots/questionspage.png" alt="questionapage" width="45%">
+## All Questions
+<img src="./screenshots/questionspage.png" alt="questionapage">
 
+## Question and Answers Page
 <img src="./screenshots/questionandanswerpage.png" alt="questionandanswerpage">
 
 
