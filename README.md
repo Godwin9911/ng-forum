@@ -23,6 +23,8 @@ A NodeJS Backend using express to create the API endpoints, Passport for user au
 * Hashed Users Password with Bcrypt.
 * Update Nested data in a mongodb collection.
 
+# Screenshots
+<img scr="./screenshots/loginpage.png" alt="loginpage">
 
 # Side Fact
 
