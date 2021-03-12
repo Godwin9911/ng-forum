@@ -42,5 +42,3 @@ A NodeJS Backend using express to create the API endpoints, Passport for user au
 
 # Side Fact
 
-My first Angular project with user Authentication.
-
